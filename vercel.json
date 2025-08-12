@@ -1,16 +1,10 @@
 {
   "version": 2,
   "functions": {
-    "api/**/*.ts": {
-      "runtime": "nodejs18.x"
+    "api/*.ts": {
+      "runtime": "vercel-node@3.0.0"
     }
   },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
   "buildCommand": "npm run build",
   "outputDirectory": "dist"
 }
